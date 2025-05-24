@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Rubik', sans-serif;
       margin: 0;
       background: #fdfdfc;
       color: #333;
@@ -163,6 +164,7 @@ header {
 </body>
 </html>
 
+
 header h1 {
-  color: #e8e5c3;
+  color: #f8f2bf;
 }
