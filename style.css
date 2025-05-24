@@ -89,6 +89,15 @@ footer {
   color: white;
 }
 
+footer .trailer {
+  color: white;
+}
+
+footer .trailer a {
+  color: white;
+  text-decoration: underline;
+}
+
 @media (max-width: 600px) {
   .profile {
     float: none;
