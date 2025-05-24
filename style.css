@@ -10,13 +10,13 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       background: #fdfdfc;
-      color: #333;
+      color: #2c3e50;
       line-height: 1.6;
     }
 
     header {
-      background-color: #184d47;
-      color: white;
+      background-color: #2c3e50;
+      color: #f1c40f;
       text-align: center;
       padding: 2rem 1rem;
     }
@@ -27,7 +27,7 @@
     }
 
     nav {
-      background-color: #efefef;
+      background-color: #3498db;
       padding: 0.75rem;
       text-align: center;
     }
@@ -45,7 +45,7 @@
 
     nav ul li a {
       text-decoration: none;
-      color: #184d47;
+      color: #2c3e50;
       font-weight: bold;
     }
 
@@ -56,7 +56,7 @@
     }
 
     h2 {
-      color: #184d47;
+      color: #2c3e50;
     }
 
     .profile {
@@ -87,8 +87,8 @@
     footer {
       text-align: center;
       padding: 1.5rem;
-      background: #184d47;
-      color: white;
+      background: #2c3e50;
+      color: #f1c40f;
     }
 
     @media (max-width: 600px) {
