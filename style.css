@@ -133,11 +133,20 @@ footer a:hover {
   }
 }
 
-#about {
-  background: url('assets/bg_about.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: white;
-  text-shadow: 1px 1px 3px #000;
+#about a {
+  color: #f8f2bf;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#about a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(255,255,255,0.8);
+}
+
+#about h2 {
+  color: #fffce6;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
 }
 
 #nowplaying {
