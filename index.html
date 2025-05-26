@@ -9,84 +9,80 @@
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
 </head>
 <body>
-  <header>
-    <h1>Kevin McDonald aka KMac(TN)</h1>
-    <p class="tagline">Life’s too short for boring websites.</p>
-  </header>
+  <div id="site-header" style="display: none;"></div>
 
-<nav>
-  <ul>
-    <li><a href="pages/about.html">About</a></li>
-    <li><a href="pages/gallery.html">Gallery</a></li>
-    <li><a href="pages/scuba.html">Scuba</a></li>
-    <li><a href="pages/travel.html">Travel</a></li>
-    <li><a href="pages/motorcycles.html">Motorcycles</a></li>
-    <li><a href="pages/boxer-corner.html">Boxer Corner</a></li>
-  </ul>
-</nav>
-
-<section id="about">
-  <h2>About Me</h2>
-  <img src="assets/kmac_thailand.jpg" alt="Kevin scuba diving in Thailand" class="profile" />
-  <p class="about-intro">
-    Hi, I'm Kevin — or KMac to most. It is rumored that I live in Tennessee. I live for scuba dives, music with soul, playing cards with friends, motorcycle rides, smoky BBQ, family laughs, and my boxers who expect room service and belly rubs. <br><br>
-    <a href="pages/about.html">More about me →</a>
-  </p>
-</section>
-
-<section id="current-events">
-  <h2>What’s new with me?</h2>
-  <article>
-    <h3>May 2025</h3>
-    <p>I’m gearing up for an epic scuba diving trip to Fiji with my lovely bride and some good friends! I’ve got my new GoPro HERO12 ready and plan to put it to the test. On the agenda: the legendary Beqa Lagoon shark dive — bull sharks included. If all goes well, I’ll return with footage, stories… and all my limbs intact.</p>
-  </article>
-</section>
-
-<section class="dog-corner-wrapper">
-  <h2>Boxer Corner</h2>
-  <table class="dog-gallery">
-    <tr>
-      <td>
-        <a href="pages/roxie.html"><img src="assets/roxie.png" alt="Roxie" class="dog-pic" /></a>
-        <p class="dog-caption">Original Guard</p>
-      </td>
-      <td>
-        <a href="pages/raven.html"><img src="assets/raven.png" alt="Raven" class="dog-pic" /></a>
-        <p class="dog-caption">The European</p>
-      </td>
-      <td>
-        <a href="pages/nyx.html"><img src="assets/nyx.png" alt="Nyx" class="dog-pic" /></a>
-        <p class="dog-caption">The Bitch</p>
-      </td>
-    </tr>
-  </table>
-</section>
-
-<section id="gallery">
-  <h2>Gallery</h2>
-  <p>A few snapshots — check out the full archive for more. <a href="pages/gallery.html">Full gallery →</a></p>
-  <div class="gallery">
-    <a href="assets/kevin_shipwreck.jpeg" target="_blank"><img src="assets/kevin_shipwreck.jpeg" alt="Shipwrecked" /></a>
-    <a href="assets/kevin_blowing_bubbles.jpeg" target="_blank"><img src="assets/kevin_blowing_bubbles.jpeg" alt="Blowing bubbles" /></a>
-  </div>
-</section>
-
-<footer>
-  <p>&copy; 2025 KMac</p>
-  <p><a href="pages/work.html">Professional / Work-related Content</a></p>
-  <div class="trailer">
-    <p style="font-size: 0.7rem; color: #888;">
-      Contact: <a href="mailto:kjmcdonald@pobox.com">kjmcdonald@pobox.com</a> ·
-      LinkedIn: <a href="https://www.linkedin.com/in/kmactn" target="_blank">/in/kmactn</a> ·
-      GitHub: <a href="https://github.com/KMacTN" target="_blank">@kmactn</a>
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="assets/kmac_thailand.jpg" alt="Kevin scuba diving in Thailand" class="profile" />
+    <p class="about-intro">
+      Hi, I'm Kevin — or KMac to most. It is rumored that I live in Tennessee. I live for scuba dives, music with soul, playing cards with friends, motorcycle rides, smoky BBQ, family laughs, and my boxers who expect room service and belly rubs. <br><br>
+      <a href="pages/about.html">More about me →</a>
     </p>
-  </div>
-</footer>
+  </section>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    document.body.classList.add("fade-in");
-  });
-</script>
+  <section id="current-events">
+    <h2>What’s new with me?</h2>
+    <article>
+      <h3>May 2025</h3>
+      <p>I’m gearing up for an epic scuba diving trip to Fiji with my lovely bride and some good friends! I’ve got my new GoPro HERO12 ready and plan to put it to the test. On the agenda: the legendary Beqa Lagoon shark dive — bull sharks included. If all goes well, I’ll return with footage, stories… and all my limbs intact.</p>
+    </article>
+  </section>
+
+  <section class="dog-corner-wrapper">
+    <h2>Boxer Corner</h2>
+    <table class="dog-gallery">
+      <tr>
+        <td>
+          <a href="pages/roxie.html"><img src="assets/roxie.png" alt="Roxie" class="dog-pic" /></a>
+          <p class="dog-caption">Original Guard</p>
+        </td>
+        <td>
+          <a href="pages/raven.html"><img src="assets/raven.png" alt="Raven" class="dog-pic" /></a>
+          <p class="dog-caption">The European</p>
+        </td>
+        <td>
+          <a href="pages/nyx.html"><img src="assets/nyx.png" alt="Nyx" class="dog-pic" /></a>
+          <p class="dog-caption">The Bitch</p>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <p>A few snapshots — check out the full archive for more. <a href="pages/gallery.html">Full gallery →</a></p>
+    <div class="gallery">
+      <a href="assets/kevin_shipwreck.jpeg" target="_blank"><img src="assets/kevin_shipwreck.jpeg" alt="Shipwrecked" /></a>
+      <a href="assets/kevin_blowing_bubbles.jpeg" target="_blank"><img src="assets/kevin_blowing_bubbles.jpeg" alt="Blowing bubbles" /></a>
+    </div>
+  </section>
+
+  <div id="site-footer" style="display: none;"></div>
+
+  <script>
+    function loadInto(id, file) {
+      fetch(file)
+        .then(res => {
+          if (!res.ok) throw new Error(`Failed to load ${file} (${res.status})`);
+          return res.text();
+        })
+        .then(html => {
+          const el = document.getElementById(id);
+          el.innerHTML = html;
+          el.style.display = "block";
+        })
+        .catch(err => {
+          console.error(err);
+          document.getElementById(id).innerHTML = `<div style="color:red;">Error loading ${file}</div>`;
+        });
+    }
+
+    loadInto("site-header", "pages/header.html");
+    loadInto("site-footer", "pages/footer.html");
+
+    document.addEventListener("DOMContentLoaded", function () {
+      document.body.classList.add("fade-in");
+    });
+  </script>
 </body>
 </html>
