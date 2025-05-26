@@ -1,10 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | KMac’s Website</title>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    body {
+      background: linear-gradient(to bottom, #fdfdfc, #f3f1ed);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #184d47, #216a51);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #fffce6;
+    }
+    .tagline {
+      font-style: italic;
+      color: #e0ffe6;
+      margin-top: 0.5rem;
+      font-weight: 300;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .about-wrapper {
+      background: white;
+      padding: 2.5rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.12);
+      max-width: 700px;
+      line-height: 1.7;
+    }
+    .about-wrapper h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #184d47;
+      text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+    }
+    .about-highlight {
+      background: #f8f8f4;
+      padding: 1.25rem 1.5rem;
+      border-left: 4px solid #184d47;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+      color: #2c2c2c;
+    }
+    .back-button {
+      margin-top: 2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #184d47;
+      border: 2px solid #184d47;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      transition: all 0.2s ease-in-out;
+      display: inline-block;
+    }
+    .back-button:hover {
+      background-color: #184d47;
+      color: white;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -12,17 +86,26 @@
     <p class="tagline">Who I Am and Why This Site Exists</p>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Hi, I'm Kevin — or KMac(TN) to most. I live in Tennessee, love scuba diving, good music, playing cards, my family and of course my dogs. This site’s about my personal life and interests.</p>
-  </section>
+  <main>
+    <section class="about-wrapper">
+      <h2>Meet KMac</h2>
+      <p class="about-highlight">
+        Hey, I’m Kevin — or KMac(TN) if you know me by my online handle. I live in Tennessee, thrive on scuba dives, good music, poker nights, and unapologetically spoil my family (especially the four-legged members). This site is where I share my adventures, passions, and digital breadcrumbs.
+      </p>
+      <p style="text-align: center;"><a href="/index.html" class="back-button">← Back to Home</a></p>
+    </section>
+  </main>
+
   <footer>
-    <p><a href="../index.html">← Back to Home</a></p>
-    <p style="font-size: 0.7rem; color: #888;">
-      Contact: <a href="mailto:kjmcdonald@pobox.com">kjmcdonald@pobox.com</a> ·
-      LinkedIn: <a href="https://www.linkedin.com/in/kmactn" target="_blank">/in/kmcdonald</a> ·
-      GitHub: <a href="https://github.com/KMacTN" target="_blank">@kmactn</a>
-    </p>
+    Contact: <a href="mailto:kjmcdonald@pobox.com">kjmcdonald@pobox.com</a> ·
+    LinkedIn: <a href="https://www.linkedin.com/in/kmactn" target="_blank">/in/kmactn</a> ·
+    GitHub: <a href="https://github.com/KMacTN" target="_blank">@kmactn</a>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.body.classList.add("fade-in");
+    });
+  </script>
 </body>
 </html>
