@@ -149,6 +149,11 @@ footer a:hover {
   text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
 }
 
+#about p {
+  color: #e0e0e0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
 #nowplaying {
   background-color: #fffce6;
   text-align: center;
