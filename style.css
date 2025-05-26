@@ -6,6 +6,29 @@ body {
   background: #fdfdfc;
   color: #333;
   line-height: 1.6;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+.back-button {
+  font-weight: bold;
+  text-decoration: none;
+  color: #184d47;
+  border: 1px solid #184d47;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.2s ease-in-out;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.back-button:hover {
+  background-color: #184d47;
+  color: white;
 }
 
 header {
@@ -133,31 +156,116 @@ footer a:hover {
   }
 }
 
+#about .about-intro {
+  color: #f0f0f0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.45); /* semi-transparent overlay */
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  display: block;
+  overflow: hidden;
+}
+
+#about {
+  background: url('assets/turkwater.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-shadow: 1px 1px 3px #000;
+  margin-bottom: 3rem; /* 👈 adds separation */
+}
+
+#about h2 {
+  color: #f0f0f0;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
 #about a {
-  color: #f8f2bf;
+  color: #f0f0f0;
   font-weight: bold;
   text-decoration: underline;
 }
 
 #about a:hover {
   color: #ffffff;
-  text-shadow: 0 0 6px rgba(255,255,255,0.8);
-}
-
-#about h2 {
-  color: #fffce6;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.6);
 }
 
 #about p {
   color: #e0e0e0;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
 
-#nowplaying {
-  background-color: #fffce6;
-  text-align: center;
+#current-events h2 {
+  color: #184d47;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+#current-events {
   padding: 2rem;
-  font-style: italic;
-  border-top: 1px solid #ccc;
+  border-radius: 12px;
+  margin-top: 2rem;
+  background-color: #f3f1ed;
+  box-shadow: 0 0 10px rgba(0,0,0,0.04);
+}
+
+
+.dog-callout {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.dog-callout img {
+  max-width: 100px;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.dog-callout-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.dog-corner-wrapper {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.dog-corner-wrapper h2 {
+  font-size: 1.8rem;
+  color: #184d47;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dog-gallery {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dog-gallery td {
+  padding: 1rem;
+  vertical-align: top;
+  text-align: center; 
+}
+
+.dog-pic {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.dog-caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #444;
+  text-align: center;
 }
