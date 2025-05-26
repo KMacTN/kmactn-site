@@ -22,6 +22,13 @@ header h1 {
   font-style: italic;
   color: #f8f2bf;
   margin-top: 0.5rem;
+  animation: fadeInSlide 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInSlide {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 nav {
@@ -45,6 +52,12 @@ nav ul li a {
   text-decoration: none;
   color: #184d47;
   font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #2c3e50;
+  text-shadow: 0 0 5px #f8f2bf;
 }
 
 section {
@@ -118,4 +131,19 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
   }
+}
+
+#about {
+  background: url('assets/bg_about.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-shadow: 1px 1px 3px #000;
+}
+
+#nowplaying {
+  background-color: #fffce6;
+  text-align: center;
+  padding: 2rem;
+  font-style: italic;
+  border-top: 1px solid #ccc;
 }
