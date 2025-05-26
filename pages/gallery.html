@@ -1,34 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gallery | KMac’s Website</title>
-  <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | KMac's Website</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .gallery-section {
+      margin: 2rem auto;
+      max-width: 1200px;
+      padding: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+      filter: brightness(1.2) contrast(1.1);
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover .caption {
+      transform: translateY(0);
+    }
+
+    .section-divider {
+      margin: 3rem 0 1.5rem;
+      border-top: 2px solid #ccc;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Gallery</h1>
-    <p class="tagline">Photos & Memories</p>
+    <h1>Photo Gallery</h1>
+    <p class="tagline">Snapshots of Life, Love, and Laughs</p>
   </header>
 
-  <section>
-    <h2>Gallery</h2>
-    <p>Organized by themes like vacations, events, and moments. Videos coming soon.</p>
-  </section>
+  <nav>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/gallery.html">Gallery</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  
-    <p><a href="../index.html">← Back to Home</a></p>
-    <p style="font-size: 0.7rem; color: #888;">
-      Contact: <a href="mailto:kjmcdonald@pobox.com">kjmcdonald@pobox.com</a> ·
-      LinkedIn: <a href="https://www.linkedin.com/in/kmactn" target="_blank">/in/kmcdonald</a> ·
-      GitHub: <a href="https://github.com/KMacTN" target="_blank">@kmactn</a>
-    </p>
-  
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  document.body.classList.add("fade-in");
-});
-</script>
+  <main>
+    <div class="gallery-section">
+      <h2>Family</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="/gallery/family/photo1.jpg" alt="Family moment" />
+          <div class="caption">BBQ at Mom's House</div>
+        </div>
+        <!-- More images in /gallery/family/ -->
+      </div>
+
+      <div class="section-divider"></div>
+
+      <h2>Dogs</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="/gallery/dogs/dog1.jpg" alt="My dog" />
+          <div class="caption">Guard duty mode</div>
+        </div>
+        <!-- More images in /gallery/dogs/ -->
+      </div>
+
+      <div class="section-divider"></div>
+
+      <h2>Vacations</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="/gallery/vacations/beach.jpg" alt="Fiji trip" />
+          <div class="caption">Sunset in Fiji</div>
+        </div>
+        <!-- More images in /gallery/vacations/ -->
+      </div>
+
+      <div class="section-divider"></div>
+
+      <h2>Mashups</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="/gallery/mashups/funny1.jpg" alt="Funny edit" />
+          <div class="caption">The legendary grumpquat</div>
+        </div>
+        <!-- More images in /gallery/mashups/ -->
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p style="text-align: center; padding: 1rem;">&copy; 2025 KMac</p>
+  </footer>
 </body>
 </html>
