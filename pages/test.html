@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Header/Footer Include Test</title>
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
   <div id="site-header" style="display: none;"></div>
@@ -21,11 +21,18 @@
   <script>
     function loadInto(id, file) {
       fetch(file)
-        .then(res => res.text())
+        .then(res => {
+          if (!res.ok) throw new Error(`Failed to load ${file} (${res.status})`);
+          return res.text();
+        })
         .then(html => {
           const el = document.getElementById(id);
           el.innerHTML = html;
           el.style.display = "block";
+        })
+        .catch(err => {
+          console.error(err);
+          document.getElementById(id).innerHTML = `<div style="color:red;">Error loading ${file}</div>`;
         });
     }
 
