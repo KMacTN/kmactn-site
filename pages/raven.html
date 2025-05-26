@@ -5,17 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Raven the Boxer</title>
   <link rel="stylesheet" href="/style.css" />
+  <style>
+    .dog-feature {
+      text-align: center;
+      padding: 2rem;
+    }
+    .dog-feature img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .dog-feature h2 {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+    .dog-feature p {
+      max-width: 600px;
+      margin: 1rem auto;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Raven</h1>
-    <p class="tagline">The European</p>
+    <h1>Raven the Boxer</h1>
+    <p class="tagline">The European Enigma</p>
   </header>
 
-  <section>
-    <img src="../assets/raven.png" alt="Raven the Boxer" class="dog-pic" />
-    <p style="text-align: center;">Raven came with attitude, a European pedigree, and a bark that echoed through drywall. A total sweetheart when she wanted to be.</p>
-    <p style="text-align: center;"><a href="boxer-corner.html" class="back-button">← Back to Boxer Corner</a></p>
+  <section class="dog-feature">
+    <img src="../assets/raven.png" alt="Raven the Boxer" />
+    <h2>The European Enigma</h2>
+    <p>Raven came from a fancy bloodline, but never let it get to her head. She patrolled the yard like royalty and had a bark that could wake the neighbors.</p>
+    <p><a href="/pages/boxer-corner.html" class="back-button">← Back to Boxer Corner</a></p>
   </section>
 
   <script>

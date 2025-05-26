@@ -5,17 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roxie the Boxer</title>
   <link rel="stylesheet" href="/style.css" />
+  <style>
+    .dog-feature {
+      text-align: center;
+      padding: 2rem;
+    }
+    .dog-feature img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .dog-feature h2 {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+    .dog-feature p {
+      max-width: 600px;
+      margin: 1rem auto;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Roxie</h1>
+    <h1>Roxie the Boxer</h1>
     <p class="tagline">Original Guard of the House</p>
   </header>
 
-  <section>
-    <img src="../assets/roxie.png" alt="Roxie the Boxer" class="dog-pic" />
-    <p style="text-align: center;">Roxie ruled the household with firm paws and loud barks. Always on duty, unless she was asleep on the couch.</p>
-    <p style="text-align: center;"><a href="boxer-corner.html" class="back-button">← Back to Boxer Corner</a></p>
+  <section class="dog-feature">
+    <img src="../assets/roxie.png" alt="Roxie the Boxer" />
+    <h2>Original Guard of the House</h2>
+    <p>Roxie ruled the household with firm paws and loud barks. She was our doorbell, our protector, and our queen of the couch.</p>
+    <p><a href="/pages/boxer-corner.html" class="back-button">← Back to Boxer Corner</a></p>
   </section>
 
   <script>

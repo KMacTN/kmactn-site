@@ -5,17 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nyx the Boxer</title>
   <link rel="stylesheet" href="/style.css" />
+  <style>
+    .dog-feature {
+      text-align: center;
+      padding: 2rem;
+    }
+    .dog-feature img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .dog-feature h2 {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+    .dog-feature p {
+      max-width: 600px;
+      margin: 1rem auto;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Nyx</h1>
-    <p class="tagline">The Bitch</p>
+    <h1>Nyx the Boxer</h1>
+    <p class="tagline">Certified Chaos Coordinator</p>
   </header>
 
-  <section>
-    <img src="../assets/nyx.png" alt="Nyx the Boxer" class="dog-pic" />
-    <p style="text-align: center;">Nyx doesn’t take orders — she gives them. Equal parts brains, sass, and snuggles. She’s probably staring at you right now.</p>
-    <p style="text-align: center;"><a href="boxer-corner.html" class="back-button">← Back to Boxer Corner</a></p>
+  <section class="dog-feature">
+    <img src="../assets/nyx.png" alt="Nyx the Boxer" />
+    <h2>Certified Chaos Coordinator</h2>
+    <p>Nyx doesn’t ask for permission — she issues commands. Part shadow, part snuggle monster, she keeps us all on our toes with her attitude and affection.</p>
+    <p><a href="/pages/boxer-corner.html" class="back-button">← Back to Boxer Corner</a></p>
   </section>
 
   <script>
